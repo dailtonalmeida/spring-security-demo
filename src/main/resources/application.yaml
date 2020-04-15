@@ -1,0 +1,17 @@
+
+server:
+  port: 9090
+
+spring:
+  security:
+    user:
+      name: theuser
+      password: lala
+
+custom:
+  ldap:
+    domain: seu_dominio.com
+    url: ldap://seu_servidor_ad:389
+    rootDn: DC=x,DC=y,DC=z
+    adminGroup: seu_grupo_que_define_usuarios_administrativos
+        

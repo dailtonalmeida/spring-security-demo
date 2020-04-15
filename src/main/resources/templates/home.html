@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>HOME PAGE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1><span th:text="'Atenção! ' + ${message}"></span></h1>
+    </body>
+
+    <h3>TODO PAGE (disponível para qualquer usuário logado)</h3>
+    <a th:href="@{/todo}">TODO PAGE</a>
+
+    <h3>ADMIN PAGE (disponível usuário logado e com perfil administrativo)</h3>
+    <a th:href="@{/admin}">ADMIN PAGE</a>
+</html>
