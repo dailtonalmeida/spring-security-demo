@@ -16,7 +16,7 @@ import org.springframework.security.crypto.password.NoOpPasswordEncoder;
  *
  * @author dailtonalmeida
  */
-//@EnableWebSecurity
+@EnableWebSecurity
 public class InMemorySecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
