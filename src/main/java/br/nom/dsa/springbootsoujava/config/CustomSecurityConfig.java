@@ -10,25 +10,17 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
-import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 
 /**
  *
  * @author dailtonalmeida
  */
 @EnableWebSecurity
-public class InMemorySecurityConfig extends WebSecurityConfigurerAdapter {
+public class CustomSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-        auth
-                .inMemoryAuthentication()
-                    .withUser("ronaldinho").password("gaucho").roles("USER")
-                    .and()
-                    .withUser("lionel").password("messi").roles("USER", "ADMIN")
-                    .and()
-                .passwordEncoder(NoOpPasswordEncoder.getInstance())
-                ;
+        auth.authenticationProvider(new CustomAuthenticationProvider());
     }
 
     protected void configure(HttpSecurity http) throws Exception {

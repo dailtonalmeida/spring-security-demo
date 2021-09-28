@@ -10,5 +10,14 @@
         <h1>ADMIN PAGE</h1>
         <h2><span th:text="'Atenção! ' + ${message}"></span></h2>
         Name: <span sec:authentication="name">The User Name</span>
+
+        <h3>HOME PAGE (disponível para qualquer usuário)</h3>
+        <a th:href="@{/home}">HOME PAGE</a>
+
+        <h3>TODO PAGE (disponível para qualquer usuário logado)</h3>
+        <a th:href="@{/todo}">TODO PAGE</a>
+
+        <h3>LOGOUT</h3>
+        <a th:href="@{/logout}">LOGOUT</a>
     </body>
 </html>
