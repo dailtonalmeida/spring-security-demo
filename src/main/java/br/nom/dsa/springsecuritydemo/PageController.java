@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.nom.dsa.springsecuritygft;
+package br.nom.dsa.springsecuritydemo;
 
 import java.util.Arrays;
 import org.springframework.stereotype.Controller;

@@ -11,7 +11,7 @@
     <groupId>br.nom.dsa</groupId>
     <artifactId>springsecuritysoujava</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>SPRING SECURITY DEMO GFT</name>
+    <name>SPRING SECURITY DEMO CUSTOM PROVIDER</name>
 
     <properties>
         <java.version>1.8</java.version>

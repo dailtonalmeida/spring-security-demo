@@ -1,4 +1,4 @@
-package br.nom.dsa.springsecuritygft.config;
+package br.nom.dsa.springsecuritydemo.config;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
