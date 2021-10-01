@@ -16,5 +16,14 @@ and open the template in the editor.
         <ol>
             <li th:each="task: ${toDoList}" th:text="${task}"></li>
         </ol>
+
+        <h3>HOME PAGE (aberto)</h3>
+        <a th:href="@{/home}">HOME PAGE</a>
+
+        <h3>ADMIN PAGE (disponível usuário logado e com perfil administrativo)</h3>
+        <a th:href="@{/admin}">ADMIN PAGE</a>
+
+        <h3>LOGOUT</h3>
+        <a th:href="@{/logout}">LOGOUT</a>
     </body>
 </html>
