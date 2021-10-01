@@ -1,4 +1,4 @@
-package br.nom.dsa.springbootsoujava;
+package br.nom.dsa.springsecuritygft;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

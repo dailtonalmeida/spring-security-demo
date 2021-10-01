@@ -1,4 +1,4 @@
-package br.nom.dsa.springbootsoujava;
+package br.nom.dsa.springsecuritygft;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
