@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package br.nom.dsa.springbootsoujava.config;
+package br.nom.dsa.springsecuritygft.config;
 
 import java.io.File;
 import java.io.FileInputStream;
